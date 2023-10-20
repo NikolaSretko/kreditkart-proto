@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreditCard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="chip"><img src="./assets/img/chip.png" alt="kreditkartenchip"></div> 
+        <div class="card-number" id="card-number">1234 5678 9012 3456</div>
+        <div class="card-holder" id="card-holder">Max Mustermann</div>
+        <div class="card-expiration" id="card-expiration">2026-08-23</div>
+        <div class="card-cvv" id="card-cvv">123</div>
+    </div>
+    <form>
+        <div>
+            <label for="cardNumber">Card Number</label>
+            <label for="cardHolder">Card Holder</label>
+            <label for="expirationDate">Expiration Date</label>
+            <label for="cvv">CVV</label>
+        </div>
+        <div>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+            <input type="text" id="cardHolder" placeholder="Max Mustermann">
+            <input type="date" id="expirationDate">
+            <input type="text" id="cvv" placeholder="123">
+        </div>
+    <input type="submit" value="Submit">
+    </form>
+    
+    <script src="./assets/js/logic.js"></script>
+</body>
+</html>
